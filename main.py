@@ -8,8 +8,6 @@ import os
 
 # .env 파일에서 환경 변수 로드
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
 
 llm = ChatOpenAI(
 temperature=0.5)

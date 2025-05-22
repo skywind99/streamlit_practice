@@ -16,9 +16,9 @@ mid_prompt = ChatPromptTemplate.from_messages([
        ])
 final_prompt = ChatPromptTemplate.from_messages([
        ("system","""    당신은 글쓰기 피드백 도우미입니다.    학생이 현재까지 쓴 글을 읽고, 최소 1점에서 최대 5점까지 점수를 부여하세요.    학생이 더 나은 글을 쓸 수 있도록 마지막 피드백을 제공해주세요.     다음의 형식에 맞게 답변을 생성해줘. 
-        # 점수
+        ### 점수
            - 점수 및 점수 배점 이유
-        # 피드백
+        ### 피드백
            - 글이 더 나아지기 위한 피드백          
         """),    ("human","""     이름 : {name}, 현재까지 쓴 내용 : {input}     """)
        ])
